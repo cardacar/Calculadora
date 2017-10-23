@@ -12,12 +12,14 @@ package Operaciones;
 public class Operaciones {
     
     public static double Convertir(double angulo){
+        //Convertir de grados a radianes
         double conversion;
         conversion = angulo*2.0*Math.PI/360.0;
         return conversion;
         
     }
     public static double dosDecimales(double num){
+        //Metodo que me devuelve un número con dos decimales
         double x;
         String format;
         format = Double.toString((double)(Math.round(num*100d)/100d));
